@@ -4,12 +4,13 @@ from functools import lru_cache
  
 class Settings(BaseSettings):
   API_V1_STR: str = "/api/v1"
-  PROJECT_NAME: str = "Sitios en minca"
+  PROJECT_NAME: str = "backend "
   POSTGRES_SERVER: str = "localhost"
-  POSTGRES_USER: str = "fastapi"
+  POSTGRES_USER: str = "seba"
   POSTGRES_PASSWORD: str = "123123"
-  POSTGRES_DB: str = "minca"
-  SQLALCHEMY_DATABASE_URI: Optional[str] = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}/{POSTGRES_DB}"
+  POSTGRES_DB: str = "backend"
+  SQLALCHEMY_DATABASE_URI: Optional[str] =
+   f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}/{POSTGRES_DB}"
   class Config:
       case_sensitive = True
  
